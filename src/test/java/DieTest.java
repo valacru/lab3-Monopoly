@@ -8,7 +8,7 @@ class DieTest {
     void valueOfAFaceShouldBeInTheRightBoundaries()
     {
         Die die = new Die();
-        assertTrue((die.getFaceValue() <= 6) && (die.getFaceValue() >= 1) );
+        assertFalse((die.getFaceValue() > 6) && (die.getFaceValue() < 1) );
     }
 
     @Test
