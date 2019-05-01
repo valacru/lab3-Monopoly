@@ -16,7 +16,7 @@ class DieTest {
     {
         boolean one = false, two = false, three = false, four = false,
                 five = false, six = false;
-        for(int i = 0; i < 100000; ++i)
+        for(int i = 0; i < 100; ++i)
         {
             Die die = new Die();
             int valeur = die.getFaceValue();
@@ -38,7 +38,6 @@ class DieTest {
                     break;
             }
         }
-        assertTrue(one && two && three && four && five && six);
+        assertEquals(one && two && three && four && five && six, true);
     }
-
 }
