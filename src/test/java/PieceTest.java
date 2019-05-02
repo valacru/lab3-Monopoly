@@ -12,4 +12,11 @@ class PieceTest {
 
         assertNotEquals(piece1.getPieceName(), piece2.getPieceName());
     }
+
+    @Test
+    void everyPieceShouldStartOnGo()
+    {
+        Piece piece = new Piece();
+        assertEquals(piece.getLocation().getSquareName(), "Go");
+    }
 }
