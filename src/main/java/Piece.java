@@ -15,9 +15,9 @@ public class Piece {
         }
     }
 
-    public Square getLocation(Piece piece)
+    public Square getLocation()
     {
-        return piece.location;
+        return this.location;
     }
 
     public String getPieceName()
