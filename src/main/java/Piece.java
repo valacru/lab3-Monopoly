@@ -1,7 +1,8 @@
 public class Piece {
     private String pieceName;
     private Square location;
-    private String[] piecesNames = {"T-Rex", "Spinosaur", "Diplodocus", "Stegosaur", "Pteranodon",
+    private String[] piecesNames =
+            {"T-Rex", "Spinosaur", "Diplodocus", "Stegosaur", "Pteranodon",
             "Utahraptor", "Carnotaur", "Triceratops"};
     private static int counter = 0;
 

@@ -1,4 +1,5 @@
-public class Square {
+public class Square
+{
     private String squareName;
 
     public Square()
