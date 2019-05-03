@@ -2,21 +2,13 @@ public class Square
 {
     private String squareName;
 
-    /**
-     * Constructor
-     * @param newSquareName
-     */
-    public Square(String newSquareName)
+    public Square()
     {
-        squareName = newSquareName;
+        squareName = "Go";
     }
 
-    /**
-     * Getter
-     * @return name of the current square
-     */
     public String getSquareName()
     {
-        return squareName;
+        return this.squareName;
     }
 }
