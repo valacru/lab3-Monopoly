@@ -10,7 +10,7 @@ public class Square
 
     public Square()
     {
-        if(counter > 40)
+        if(counter > 39)
         {
             counter = 0;
         }
@@ -22,7 +22,7 @@ public class Square
         {
             squareName = "Square " + counter;
         }
-        counter++;
+        ++counter;
     }
 
     public String getSquareName()
