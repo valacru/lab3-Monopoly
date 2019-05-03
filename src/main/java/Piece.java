@@ -6,6 +6,7 @@ public class Piece {
             "Utahraptor", "Carnotaur", "Triceratops"};
     private static int counter = 0;
 
+
     public Piece() {
         pieceName = piecesNames[counter];
         location = new Square();
