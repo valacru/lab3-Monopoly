@@ -27,6 +27,6 @@ public class Square
 
     public String getSquareName()
     {
-        return squareName;
+        return this.squareName;
     }
 }

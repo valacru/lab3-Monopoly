@@ -8,7 +8,7 @@ class SquareTest
     @Test
     void aSquareShouldHaveAName()
     {
-        Square squareToTest = new Square("Go");
+        Square squareToTest = new Square();
         String nameToTest = "Go";
 
         assertEquals(squareToTest.getSquareName(), nameToTest);
