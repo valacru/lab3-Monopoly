@@ -7,7 +7,8 @@ public class Piece {
     private static int counter = 0;
 
 
-    public Piece() {
+    public Piece()
+    {
         pieceName = piecesNames[counter];
         location = new Square("Go");
         if (counter >= 8) {
