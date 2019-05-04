@@ -1,8 +1,9 @@
 import Monopoly.Board.Board;
 import Monopoly.Elements.Die;
 import Monopoly.Players.Player;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,7 +18,7 @@ class PlayerTest {
     }
 
 
-    @BeforeEach
+    @Test
     void playerShouldHaveAnExistingPiece()
     {
         int index = 0;
@@ -75,7 +76,8 @@ class PlayerTest {
         assertNotEquals(oldCase, newCase);
     }
 
-    @Test
+    @ParameterizedTest
+    @ValueSource(ints = 3)
     void aPlayerShouldBeginWith1500Dollars()
     {
         Player player = new Player("Cuicui");
