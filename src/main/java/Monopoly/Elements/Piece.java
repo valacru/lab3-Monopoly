@@ -1,6 +1,7 @@
 package Monopoly.Elements;
 
-import Monopoly.Board.Components.Square;
+import Monopoly.Board.Square.Square;
+import Monopoly.Board.Square.TypesOfSquare.GoSquare;
 
 public class Piece {
     private String pieceName;
@@ -21,8 +22,7 @@ public class Piece {
             pieceName = piecesNames[counter];
             ++counter;
         }
-
-        location = new Square("Go");
+        location = new GoSquare("Go");
     }
 
     public String getPiecesName(int index)
