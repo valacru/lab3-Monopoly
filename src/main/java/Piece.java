@@ -6,7 +6,6 @@ public class Piece {
             "Utahraptor", "Carnotaur", "Triceratops"};
     private static int counter = 0;
 
-
     public Piece() {
         pieceName = piecesNames[counter];
         location = new Square("Go");
@@ -17,9 +16,18 @@ public class Piece {
         }
     }
 
+    public String getPiecesName(int index)
+    {
+        return piecesNames[index];
+    }
     public Square getLocation()
     {
         return this.location;
+    }
+
+    public void setLocation(Square newLocation)
+    {
+        location = newLocation;
     }
 
     public String getPieceName()
