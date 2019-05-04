@@ -29,4 +29,31 @@ class PlayerTest {
         assertEquals(player.getPiece().getPieceName(), pieceNameToTest);
     }
 
+    @Test
+    void differentPlayersShouldHaveDifferentPieces()
+    {
+        int index = 0;
+        String pieceNameToTest1 = null, pieceNameToTest2 = null;
+        Player player1 = new Player("Guris");
+        Player player2 = new Player("Elodie");
+        for(; index < 8; ++index)
+        {
+            if(player1.getPiece().getPieceName().equals(player1.getPiece().getPiecesName(index)))
+            {
+                pieceNameToTest1 = player1.getPiece().getPiecesName(index);
+                break;
+            }
+        }
+        for(; index < 8; ++index)
+        {
+            if(player2.getPiece().getPieceName().equals(player2.getPiece().getPiecesName(index)))
+            {
+                pieceNameToTest2 = player2.getPiece().getPiecesName(index);
+                break;
+            }
+        }
+        assertNotEquals(pieceNameToTest1, pieceNameToTest2);
+
+    }
+
 }
