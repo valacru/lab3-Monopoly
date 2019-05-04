@@ -20,6 +20,7 @@ public class Piece {
     {
         return piecesNames[index];
     }
+
     public Square getLocation()
     {
         return this.location;

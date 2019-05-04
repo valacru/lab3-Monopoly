@@ -56,4 +56,17 @@ class PlayerTest {
 
     }
 
+    @Test
+    void aPlayerShouldBeAbleToRollDiceAndMoveOnTheBoard()
+    {
+        Board board = new Board();
+        Die die = new Die();
+        Player player = new Player("Olivier");
+        String oldCase = player.getPiece().getLocation().getSquareName();
+        player.takeTurn(board, die);
+        String newCase = player.getPiece().getLocation().getSquareName();
+
+        assertNotEquals(oldCase, newCase);
+    }
+
 }

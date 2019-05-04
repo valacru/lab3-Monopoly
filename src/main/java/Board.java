@@ -15,7 +15,7 @@ public class Board {
             }
             else
             {
-                squares.add(new Square("Square" + i));
+                squares.add(new Square("Square " + i));
             }
         }
 

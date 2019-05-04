@@ -25,7 +25,9 @@ public class Player {
         String oldLoc = piece.getLocation().getSquareName();
         piece.setLocation(board.getSquare(oldLoc, nbMove));
 
-        System.out.println(playerName + " rolled a " + nbMove);
-        System.out.println(playerName + " arrived on " + piece.getLocation().getSquareName());
+        System.out.println("Player : " + playerName);
+        System.out.println(playerName + " is on square " + oldLoc);
+        System.out.println("Rolled : " + nbMove);
+        System.out.println(playerName + " is now on " + piece.getLocation().getSquareName());
     }
 }
