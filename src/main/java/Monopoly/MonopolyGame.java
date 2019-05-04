@@ -21,7 +21,7 @@ public class MonopolyGame {
 
         die = new Die();
         board = new Board();
-        String baseName = "Monopoly.Players.Player";
+        String baseName = "Player";
 
         for(int i = 1; i <= nbPlayers; ++i)
         {
@@ -41,11 +41,6 @@ public class MonopolyGame {
 
     public LinkedList<Player> getPlayers() {
         return players;
-    }
-
-    public Player getPlayer(int id)
-    {
-        return players.get(id);
     }
 
     public void playRound(Player player)
