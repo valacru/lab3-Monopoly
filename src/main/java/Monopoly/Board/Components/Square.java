@@ -1,6 +1,6 @@
 package Monopoly.Board.Components;
 
-public class Square
+public abstract class Square
 {
     private String squareName;
     private static int counter = 0;
