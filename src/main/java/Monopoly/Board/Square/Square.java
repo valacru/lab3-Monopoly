@@ -1,5 +1,7 @@
 package Monopoly.Board.Square;
 
+import Monopoly.Players.Player;
+
 public abstract class Square
 {
     private String squareName;
@@ -14,6 +16,6 @@ public abstract class Square
         return this.squareName;
     }
 
-    public abstract boolean landedOn();
+    public abstract void landedOn(Player player);
 
 }

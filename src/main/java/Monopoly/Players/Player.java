@@ -1,6 +1,7 @@
 package Monopoly.Players;
 
 import Monopoly.Board.Board;
+import Monopoly.Board.Square.Square;
 import Monopoly.Elements.Die;
 import Monopoly.Elements.Piece;
 
@@ -26,20 +27,36 @@ public class Player {
         return piece;
     }
 
-    public int getCash()
+    public int getNetWorth()
     {
         return cash;
+    }
+
+    public void setCash(int newCash)
+    {
+        cash = newCash;
     }
 
     public void takeTurn(Board board, Die die)
     {
         int nbMove = die.roll() + die.roll();
         String oldLoc = piece.getLocation().getSquareName();
-        piece.setLocation(board.getSquare(oldLoc, nbMove));
+        Square newLoc = board.getSquare(oldLoc, nbMove);
+        piece.setLocation(newLoc);
 
         System.out.println("Player : " + playerName);
         System.out.println(playerName + " is on square " + oldLoc);
         System.out.println("Rolled : " + nbMove);
         System.out.println(playerName + " is now on " + piece.getLocation().getSquareName());
+    }
+
+    public void addCash(int suppCash)
+    {
+        cash += suppCash;
+    }
+
+    public void reduceCash()
+    {
+        cash -= Math.min(200, (this.getNetWorth() * 0.1));
     }
 }

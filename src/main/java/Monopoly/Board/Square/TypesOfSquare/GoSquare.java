@@ -1,6 +1,7 @@
 package Monopoly.Board.Square.TypesOfSquare;
 
 import Monopoly.Board.Square.Square;
+import Monopoly.Players.Player;
 
 public class GoSquare extends Square {
 
@@ -9,8 +10,9 @@ public class GoSquare extends Square {
         super(newName);
     }
 
-    public boolean landedOn()
+    @Override
+    public void landedOn(Player player)
     {
-        return true;
+        player.addCash(200);
     }
 }
