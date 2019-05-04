@@ -1,5 +1,6 @@
 package Monopoly.Board.Square.TypesOfSquare;
 import Monopoly.Board.Square.Square;
+import Monopoly.Players.Player;
 
 public class RegularSquare extends Square {
     public RegularSquare(String newName)
@@ -7,8 +8,8 @@ public class RegularSquare extends Square {
         super(newName);
     }
 
-    public boolean landedOn()
-    {
-        return true;
+    @Override
+    public void landedOn(Player player) {
+
     }
 }

@@ -81,7 +81,6 @@ class PlayerTest {
     void aPlayerShouldBeginWith1500Dollars()
     {
         Player player = new Player("Cuicui");
-        assertTrue(player.getCash() == 1500);
+        assertTrue(player.getNetWorth() == 1500);
     }
-
 }

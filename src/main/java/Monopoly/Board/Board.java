@@ -45,4 +45,9 @@ public class Board {
         }
         return squares.get((i + fvTot) % NB_SQUARES);
     }
+
+    public Square getSimpleSquare(int id)
+    {
+        return squares.get(id);
+    }
 }
