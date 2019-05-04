@@ -61,7 +61,7 @@ class PlayerTest {
     {
         Board board = new Board();
         Die die = new Die();
-        Player player = new Player("Olivier");
+        Player player = new Player("Arya");
         String oldCase = player.getPiece().getLocation().getSquareName();
         player.takeTurn(board, die);
         String newCase = player.getPiece().getLocation().getSquareName();
