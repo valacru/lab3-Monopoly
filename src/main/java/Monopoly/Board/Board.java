@@ -1,6 +1,10 @@
 package Monopoly.Board;
 
-import Monopoly.Board.Components.Square;
+import Monopoly.Board.Square.Square;
+import Monopoly.Board.Square.TypesOfSquare.GoSquare;
+import Monopoly.Board.Square.TypesOfSquare.GoToJailSquare;
+import Monopoly.Board.Square.TypesOfSquare.IncomeTaxSquare;
+import Monopoly.Board.Square.TypesOfSquare.RegularSquare;
 
 import java.util.ArrayList;
 
@@ -15,14 +19,21 @@ public class Board {
         {
             if(i == 0)
             {
-                squares.add(new Square("Go"));
+                squares.add(new GoSquare("Go"));
+            }
+            else if((i == 4) || (i == 38))
+            {
+                squares.add(new IncomeTaxSquare("Income Tax Square"));
+            }
+            else if(i == 30)
+            {
+                squares.add(new GoToJailSquare("Go To Jail Square"));
             }
             else
             {
-                squares.add(new Square("Monopoly.Board.Components.Square " + i));
+                squares.add(new RegularSquare("Square " + i));
             }
         }
-
     }
 
     public Square getSquare(String oldLoc, int fvTot) {

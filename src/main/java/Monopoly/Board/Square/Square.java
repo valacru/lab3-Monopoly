@@ -1,4 +1,4 @@
-package Monopoly.Board.Components;
+package Monopoly.Board.Square;
 
 public abstract class Square
 {
@@ -22,7 +22,7 @@ public abstract class Square
         }
         else
         {
-            squareName = "Monopoly.Board.Components.Square " + counter;
+            squareName = "Monopoly.Board.Square.Square " + counter;
         }
         ++counter;
     }
@@ -30,5 +30,10 @@ public abstract class Square
     public String getSquareName()
     {
         return this.squareName;
+    }
+
+    public void setSquareName(String newSquareName)
+    {
+        squareName = newSquareName;
     }
 }
