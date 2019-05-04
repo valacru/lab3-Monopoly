@@ -1,16 +1,9 @@
 import static org.junit.jupiter.api.Assertions.*;
+
+import Monopoly.MonopolyGame;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 class MonopolyGameTest {
-
-    @Test
-    public void aMonopolyGameShouldHaveAtLeastTwoPlayers() {
-        int nbPlayers = 2;
-        MonopolyGame mg = new MonopolyGame(nbPlayers);
-        assertNotNull(mg.getPlayers().size());
-    }
 
     @Test
     public void aMonopolyGameShouldHaveTheRightNumberOfPlayers()
@@ -20,6 +13,16 @@ class MonopolyGameTest {
         MonopolyGame monopolyGame = new MonopolyGame((nbPlayers));
         assertFalse(monopolyGame.getPlayers().size() >= BOUND_MIN &&
                 monopolyGame.getPlayers().size() <= BOUND_MAX);
+    }
+
+    @Test
+    public void aMonopolyGameShouldHaveEveryComponents()
+    {
+        int nbPlayers = 4;
+        MonopolyGame monopolyGame = new MonopolyGame(nbPlayers);
+        assertNotNull(monopolyGame.getPlayers().size());
+        assertNotNull(monopolyGame.getBoard());
+        assertNotNull(monopolyGame.getDie());
     }
 
 }

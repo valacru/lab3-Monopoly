@@ -1,3 +1,9 @@
+package Monopoly.Players;
+
+import Monopoly.Board.Board;
+import Monopoly.Elements.Die;
+import Monopoly.Elements.Piece;
+
 public class Player {
     private String playerName;
     private Piece piece;
@@ -25,7 +31,7 @@ public class Player {
         String oldLoc = piece.getLocation().getSquareName();
         piece.setLocation(board.getSquare(oldLoc, nbMove));
 
-        System.out.println("Player : " + playerName);
+        System.out.println("Monopoly.Players.Player : " + playerName);
         System.out.println(playerName + " is on square " + oldLoc);
         System.out.println("Rolled : " + nbMove);
         System.out.println(playerName + " is now on " + piece.getLocation().getSquareName());

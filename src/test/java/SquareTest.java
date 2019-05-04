@@ -1,3 +1,4 @@
+import Monopoly.Board.Components.Square;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,8 +13,8 @@ class SquareTest {
         Square s3 = new Square();
 
         assertEquals(s1.getSquareName(), "Go");
-        assertEquals(s2.getSquareName(), "Square 1");
-        assertEquals(s3.getSquareName(), "Square 2");
+        assertEquals(s2.getSquareName(), "Monopoly.Board.Components.Square 1");
+        assertEquals(s3.getSquareName(), "Monopoly.Board.Components.Square 2");
 
     }
 }

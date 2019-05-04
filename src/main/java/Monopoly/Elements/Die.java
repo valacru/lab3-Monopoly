@@ -1,3 +1,5 @@
+package Monopoly.Elements;
+
 import java.util.Random;
 
 public class Die {

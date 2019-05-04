@@ -1,3 +1,7 @@
+package Monopoly.Board;
+
+import Monopoly.Board.Components.Square;
+
 import java.util.ArrayList;
 
 public class Board {
@@ -15,7 +19,7 @@ public class Board {
             }
             else
             {
-                squares.add(new Square("Square " + i));
+                squares.add(new Square("Monopoly.Board.Components.Square " + i));
             }
         }
 

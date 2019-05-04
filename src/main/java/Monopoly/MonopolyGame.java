@@ -1,5 +1,9 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+package Monopoly;
+
+import Monopoly.Board.Board;
+import Monopoly.Elements.Die;
+import Monopoly.Players.Player;
+
 import java.util.LinkedList;
 
 public class MonopolyGame {
@@ -7,7 +11,6 @@ public class MonopolyGame {
     private Board board;
     private Die die;
     private LinkedList<Player> players;
-    private static final int BOUND_MIN = 2, BOUND_MAX = 8;
     private static final int roundCount = 20;
 
     public MonopolyGame(int newNbPlayers)
@@ -18,7 +21,7 @@ public class MonopolyGame {
 
         die = new Die();
         board = new Board();
-        String baseName = "Player";
+        String baseName = "Monopoly.Players.Player";
 
         for(int i = 1; i <= nbPlayers; ++i)
         {
