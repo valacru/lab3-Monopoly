@@ -75,4 +75,11 @@ class PlayerTest {
         assertNotEquals(oldCase, newCase);
     }
 
+    @Test
+    void aPlayerShouldBeginWith1500Dollars()
+    {
+        Player player = new Player("Cuicui");
+        assertTrue(player.getCash() == 1500);
+    }
+
 }

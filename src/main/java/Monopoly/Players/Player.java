@@ -26,6 +26,11 @@ public class Player {
         return piece;
     }
 
+    public int getCash()
+    {
+        return cash;
+    }
+
 
     public void takeTurn(Board board, Die die)
     {
