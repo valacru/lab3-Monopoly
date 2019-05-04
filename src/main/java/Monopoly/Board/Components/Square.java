@@ -1,3 +1,5 @@
+package Monopoly.Board.Components;
+
 public class Square
 {
     private String squareName;
@@ -20,7 +22,7 @@ public class Square
         }
         else
         {
-            squareName = "Square " + counter;
+            squareName = "Monopoly.Board.Components.Square " + counter;
         }
         ++counter;
     }

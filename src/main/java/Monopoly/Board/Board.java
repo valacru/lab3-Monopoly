@@ -1,3 +1,7 @@
+package Monopoly.Board;
+
+import Monopoly.Board.Components.Square;
+
 import java.util.ArrayList;
 
 public class Board {
@@ -15,7 +19,7 @@ public class Board {
             }
             else
             {
-                squares.add(new Square("Square " + i));
+                squares.add(new Square("Monopoly.Board.Components.Square " + i));
             }
         }
 
@@ -27,7 +31,6 @@ public class Board {
             if (squares.get(i).getSquareName().equals(oldLoc)) {
                 break;
             }
-            ++i;
         }
         return squares.get((i + fvTot) % NB_SQUARES);
     }

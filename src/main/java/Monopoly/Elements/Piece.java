@@ -1,3 +1,7 @@
+package Monopoly.Elements;
+
+import Monopoly.Board.Components.Square;
+
 public class Piece {
     private String pieceName;
     private Square location;

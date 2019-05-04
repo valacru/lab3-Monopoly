@@ -1,3 +1,7 @@
+import Monopoly.Board.Board;
+import Monopoly.Elements.Die;
+import Monopoly.Players.Player;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,7 +16,8 @@ class PlayerTest {
         assertEquals(player.getPlayerName(), lambdaName);
     }
 
-    @Test
+
+    @BeforeEach
     void playerShouldHaveAnExistingPiece()
     {
         int index = 0;
@@ -33,10 +38,11 @@ class PlayerTest {
     void differentPlayersShouldHaveDifferentPieces()
     {
         int index = 0;
+        final int MAX_PLAYERS = 8;
         String pieceNameToTest1 = null, pieceNameToTest2 = null;
         Player player1 = new Player("Guris");
         Player player2 = new Player("Elodie");
-        for(; index < 8; ++index)
+        for(; index < MAX_PLAYERS; ++index)
         {
             if(player1.getPiece().getPieceName().equals(player1.getPiece().getPiecesName(index)))
             {
@@ -44,7 +50,7 @@ class PlayerTest {
                 break;
             }
         }
-        for(; index < 8; ++index)
+        for(; index < MAX_PLAYERS; ++index)
         {
             if(player2.getPiece().getPieceName().equals(player2.getPiece().getPiecesName(index)))
             {
