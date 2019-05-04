@@ -8,4 +8,9 @@ public class GoSquare extends Square {
     {
         super(newName);
     }
+
+    public boolean landedOn()
+    {
+        return true;
+    }
 }

@@ -31,14 +31,13 @@ public class Player {
         return cash;
     }
 
-
     public void takeTurn(Board board, Die die)
     {
         int nbMove = die.roll() + die.roll();
         String oldLoc = piece.getLocation().getSquareName();
         piece.setLocation(board.getSquare(oldLoc, nbMove));
 
-        System.out.println("Monopoly.Players.Player : " + playerName);
+        System.out.println("Player : " + playerName);
         System.out.println(playerName + " is on square " + oldLoc);
         System.out.println("Rolled : " + nbMove);
         System.out.println(playerName + " is now on " + piece.getLocation().getSquareName());

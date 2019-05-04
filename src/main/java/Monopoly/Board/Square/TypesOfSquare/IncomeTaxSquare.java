@@ -7,4 +7,9 @@ public class IncomeTaxSquare extends Square {
     {
         super(newName);
     }
+
+    public boolean landedOn()
+    {
+        return true;
+    }
 }

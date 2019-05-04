@@ -3,28 +3,10 @@ package Monopoly.Board.Square;
 public abstract class Square
 {
     private String squareName;
-    private static int counter = 0;
 
     public Square(String newSquareName)
     {
         squareName = newSquareName;
-    }
-
-    public Square()
-    {
-        if(counter > 39)
-        {
-            counter = 0;
-        }
-        else if(counter == 0)
-        {
-            squareName = "Go";
-        }
-        else
-        {
-            squareName = "Monopoly.Board.Square.Square " + counter;
-        }
-        ++counter;
     }
 
     public String getSquareName()
@@ -32,8 +14,6 @@ public abstract class Square
         return this.squareName;
     }
 
-    public void setSquareName(String newSquareName)
-    {
-        squareName = newSquareName;
-    }
+    public abstract boolean landedOn();
+
 }

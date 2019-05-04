@@ -6,4 +6,9 @@ public class GoToJailSquare extends Square {
     {
         super(newName);
     }
+
+    public boolean landedOn()
+    {
+        return true;
+    }
 }
