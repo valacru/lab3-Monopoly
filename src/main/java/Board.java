@@ -27,7 +27,6 @@ public class Board {
             if (squares.get(i).getSquareName().equals(oldLoc)) {
                 break;
             }
-            ++i;
         }
         return squares.get((i + fvTot) % NB_SQUARES);
     }
