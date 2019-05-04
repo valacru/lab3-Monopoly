@@ -7,11 +7,13 @@ import Monopoly.Elements.Piece;
 public class Player {
     private String playerName;
     private Piece piece;
+    private int cash;
 
     public Player(String newPlayerName)
     {
         playerName = newPlayerName;
         piece = new Piece();
+        cash = 1500;
     }
 
     public String getPlayerName()
@@ -22,6 +24,11 @@ public class Player {
     public Piece getPiece()
     {
         return piece;
+    }
+
+    public int getCash()
+    {
+        return cash;
     }
 
 
