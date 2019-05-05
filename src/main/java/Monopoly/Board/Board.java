@@ -46,6 +46,16 @@ public class Board {
         return squares.get((i + fvTot) % NB_SQUARES);
     }
 
+    public int getSquaresSize()
+    {
+        return squares.size();
+    }
+
+    public ArrayList<Square> getArraySquares()
+    {
+        return squares;
+    }
+
     public Square getSimpleSquare(int id)
     {
         return squares.get(id);

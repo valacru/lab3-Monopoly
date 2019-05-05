@@ -10,7 +10,7 @@ class IncomeTaxSquareTest {
     void anIncomeTaxeSquareShouldBeWellNamed()
     {
         IncomeTaxSquare incomeTaxSquare = new IncomeTaxSquare("Income Tax Square");
-        assertEquals(incomeTaxSquare.getSquareName(), "Income Tax Square");
+        assertSame(incomeTaxSquare.getSquareName(), "Income Tax Square");
     }
 
 }
