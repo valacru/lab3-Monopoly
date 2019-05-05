@@ -43,6 +43,7 @@ public class Player {
         String oldLoc = piece.getLocation().getSquareName();
         Square newLoc = board.getSquare(oldLoc, nbMove);
         piece.setLocation(newLoc);
+        newLoc.landedOn(this);
 
         System.out.println("Player : " + playerName);
         System.out.println(playerName + " is on square " + oldLoc);
