@@ -96,8 +96,8 @@ class PlayerTest {
         assertEquals(player.getNetWorth(), 1700);
     }
 
-    @Test
-    void aPlayerShouldReduceCashUpponLandingOnIncomeTaxSquare()
+    @AfterAll
+    static void aPlayerShouldReduceCashUpponLandingOnIncomeTaxSquare()
     {
         Player player = new Player("Bran");
         IncomeTaxSquare incomeTaxSquare = new IncomeTaxSquare("Income Tax Square");
