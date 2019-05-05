@@ -12,15 +12,15 @@ Pour initialiser le board, nous avons pris le board de base du jeu pour placer l
 Nous partons du principe que les joueurs peuvent avoir le même prénom, mais pas la même pièce.
 
 1. Nous avons utilisé au moins une fois : (exemples)
-a. @BeforeEach : PlayerTest
-b. @ParameterizedTest : CupTest
-c. @RepeatedTest : PlayerTest
+1.1. @BeforeEach : PlayerTest
+1.2. @ParameterizedTest : CupTest
+1.3. @RepeatedTest : PlayerTest
 
 2. Nous comptabilisons un minimum de 5 assertions différentes : (exemples)
-a. assertEquals : PlayerTest
-b. assertNotEquals : PlayerTest
-c. assertTrue : PlayerTest
-d. assertFalse : DieTest, CupTest
-e. assertNotNull : MonopolyGameTest, BoardTest
-f. assertSame : IncomeTaxeSquareTest
-g. assertIterableEquals : BoardTest
+2.1. assertEquals : PlayerTest
+2.2. assertNotEquals : PlayerTest
+2.3. assertTrue : PlayerTest
+2.4. assertFalse : DieTest, CupTest
+2.5. assertNotNull : MonopolyGameTest, BoardTest
+2.6. assertSame : IncomeTaxeSquareTest
+2.7. assertIterableEquals : BoardTest
