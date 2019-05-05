@@ -91,7 +91,7 @@ class PlayerTest {
         Player player = new Player("Sansa");
         GoSquare goSquare = new GoSquare("Go");
         goSquare.landedOn(player);
-        // Player starts with 1500 dollars
+        // A player starts with 1500 dollars
         assertEquals(player.getNetWorth(), 1700);
     }
 }
