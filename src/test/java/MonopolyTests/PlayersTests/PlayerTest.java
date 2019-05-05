@@ -1,3 +1,5 @@
+package MonopolyTests.PlayersTests;
+
 import Monopoly.Board.Board;
 import Monopoly.Board.Square.TypesOfSquare.GoSquare;
 import Monopoly.Board.Square.TypesOfSquare.GoToJailSquare;
@@ -39,7 +41,7 @@ class PlayerTest {
         assertEquals(player.getPiece().getPieceName(), pieceNameToTest);
     }
 
-    @Test
+    @RepeatedTest(5)
     void differentPlayersShouldHaveDifferentPieces()
     {
         int index = 0;
@@ -80,8 +82,7 @@ class PlayerTest {
         assertNotEquals(oldCase, newCase);
     }
 
-    @ParameterizedTest
-    @ValueSource(ints = 3)
+    @BeforeEach
     void aPlayerShouldBeginWith1500Dollars()
     {
         Player player = new Player("Cuicui");
@@ -114,6 +115,7 @@ class PlayerTest {
         Player player = new Player("Daenerys");
         GoToJailSquare goToJailSquare = new GoToJailSquare("Go To Jail Square");
         goToJailSquare.landedOn(player);
+        //la prison se trouve sur la 10ème case du plateau
         assertEquals(player.getPiece().getLocation().getSquareName(), "Square 10");
     }
 }

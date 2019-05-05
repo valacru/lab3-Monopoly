@@ -1,3 +1,5 @@
+package MonopolyTests.BoardTests;
+
 import Monopoly.Board.Square.Square;
 import Monopoly.Board.Square.TypesOfSquare.GoSquare;
 import Monopoly.Board.Square.TypesOfSquare.RegularSquare;

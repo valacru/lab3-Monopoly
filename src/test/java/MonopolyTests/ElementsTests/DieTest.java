@@ -1,3 +1,5 @@
+package MonopolyTests.ElementsTests;
+
 import Monopoly.Elements.Die;
 import org.junit.jupiter.api.Test;
 
