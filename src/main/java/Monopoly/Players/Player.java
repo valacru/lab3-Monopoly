@@ -55,9 +55,4 @@ public class Player {
     {
         cash += suppCash;
     }
-
-    public void reduceCash()
-    {
-        cash -= Math.min(200, (this.getNetWorth() * 0.1));
-    }
 }
