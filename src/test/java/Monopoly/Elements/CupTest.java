@@ -15,4 +15,11 @@ class CupTest {
         }
         assertEquals(2, nbDice);
     }
+
+    @Test
+    void aCupShouldReturnTheCorrectTotalWhenRolled() {
+        Cup cup = new Cup(2);
+        cup.roll();
+        assertFalse((cup.getTotal() > 12) && (cup.getTotal() < 2) );
+    }
 }
