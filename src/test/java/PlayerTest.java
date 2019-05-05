@@ -1,5 +1,6 @@
 import Monopoly.Board.Board;
 import Monopoly.Board.Square.TypesOfSquare.GoSquare;
+import Monopoly.Board.Square.TypesOfSquare.IncomeTaxSquare;
 import Monopoly.Elements.Die;
 import Monopoly.Players.Player;
 import org.junit.jupiter.api.*;
@@ -93,5 +94,15 @@ class PlayerTest {
         goSquare.landedOn(player);
         // A player starts with 1500 dollars
         assertEquals(player.getNetWorth(), 1700);
+    }
+
+    @Test
+    void aPlayerShouldReduceCashUpponLandingOnIncomeTaxSquare()
+    {
+        Player player = new Player("Bran");
+        IncomeTaxSquare incomeTaxSquare = new IncomeTaxSquare("Income Tax Square");
+        incomeTaxSquare.landedOn(player);
+        // Player starts with 1500 dollars
+        assertEquals(player.getNetWorth(), 1300);
     }
 }
