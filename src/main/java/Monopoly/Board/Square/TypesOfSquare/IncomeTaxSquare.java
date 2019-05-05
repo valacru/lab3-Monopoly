@@ -11,6 +11,6 @@ public class IncomeTaxSquare extends Square {
 
     @Override
     public void landedOn(Player player) {
-
+        player.reduceCash();
     }
 }
