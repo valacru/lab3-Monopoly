@@ -58,6 +58,6 @@ public class Player {
 
     public void reduceCash()
     {
-        cash -= Math.max(200, (this.getNetWorth() * 0.1));
+        cash -= Math.min(200, (this.getNetWorth() * 0.1));
     }
 }
