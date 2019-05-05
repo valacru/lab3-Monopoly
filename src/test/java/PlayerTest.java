@@ -2,6 +2,7 @@ import Monopoly.Board.Board;
 import Monopoly.Board.Square.TypesOfSquare.GoSquare;
 import Monopoly.Board.Square.TypesOfSquare.GoToJailSquare;
 import Monopoly.Board.Square.TypesOfSquare.IncomeTaxSquare;
+import Monopoly.Elements.Cup;
 import Monopoly.Elements.Die;
 import Monopoly.Players.Player;
 import org.junit.jupiter.api.*;
@@ -70,10 +71,10 @@ class PlayerTest {
     void aPlayerShouldBeAbleToRollDiceAndMoveOnTheBoard()
     {
         Board board = new Board();
-        Die die = new Die();
+        Cup cup = new Cup(2);
         Player player = new Player("Arya");
         String oldCase = player.getPiece().getLocation().getSquareName();
-        player.takeTurn(board, die);
+        player.takeTurn(board, cup);
         String newCase = player.getPiece().getLocation().getSquareName();
 
         assertNotEquals(oldCase, newCase);
