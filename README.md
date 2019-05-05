@@ -9,19 +9,18 @@ Pour ce laboratoire nous avons tenté de reproduire ce que nous avons appris lor
 4. Ne jamais merge une pull request avant que Travis ne la valide.
 
 Pour initialiser le board, nous avons pris le board de base du jeu pour placer les squares spéciales. 
-
 Nous partons du principe que les joueurs peuvent avoir le même prénom, mais pas la même pièce.
 
-Nous avons utilisé au moins une fois : (exemples)
-@BeforeEach : PlayerTest
-@ParameterizedTest : CupTest
-@RepeatedTest : PlayerTest
+1. Nous avons utilisé au moins une fois : (exemples)
+a. @BeforeEach : PlayerTest
+b. @ParameterizedTest : CupTest
+c. @RepeatedTest : PlayerTest
 
-Nous comptabilisons un minimum de 5 assertions différentes : (exemples)
-assertEquals : PlayerTest
-assertNotEquals : PlayerTest
-assertTrue : PlayerTest
-assertFalse : DieTest, CupTest
-assertNotNull : MonopolyGameTest, BoardTest
-assertSame : IncomeTaxeSquareTest
-assertIterableEquals : BoardTest
+2. Nous comptabilisons un minimum de 5 assertions différentes : (exemples)
+a. assertEquals : PlayerTest
+b. assertNotEquals : PlayerTest
+c. assertTrue : PlayerTest
+d. assertFalse : DieTest, CupTest
+e. assertNotNull : MonopolyGameTest, BoardTest
+f. assertSame : IncomeTaxeSquareTest
+g. assertIterableEquals : BoardTest
