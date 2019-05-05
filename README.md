@@ -2,7 +2,7 @@
 ### Élèves : Crüll Loris, Lagier Elodie, Valvona Guillaume
 
 
-Pour ce laboratoire nous avons tenter de reproduire ce que nous avons appris lors des laboratoires précédents, à savoir : 
+Pour ce laboratoire nous avons tenté de reproduire ce que nous avons appris lors des laboratoires précédents, à savoir : 
 1. Créer les tests avant d'implémenter les méthodes.
 2. Se positionner sur une branche correspondante pour ne pas perdre notre travail.
 3. Créer des issues pour organiser notre travail.
