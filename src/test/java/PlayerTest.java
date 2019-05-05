@@ -11,16 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class PlayerTest {
 
     @Test
-    void aPlayerShouldGet200DollarsUpponLandingOnGoSquare()
-    {
-        Player player = new Player("Sansa");
-        GoSquare goSquare = new GoSquare("Go");
-        goSquare.landedOn(player);
-        // Player starts with 1500 dollars
-        assertEquals(player.getNetWorth(), 1700);
-    }
-    
-    @Test
     void playerShouldHaveTheCorrectName()
     {
         String lambdaName = "Elodie";
@@ -93,5 +83,15 @@ class PlayerTest {
     {
         Player player = new Player("Cuicui");
         assertTrue(player.getNetWorth() == 1500);
+    }
+
+    @AfterAll
+    static void aPlayerShouldGet200DollarsUpponLandingOnGoSquare()
+    {
+        Player player = new Player("Sansa");
+        GoSquare goSquare = new GoSquare("Go");
+        goSquare.landedOn(player);
+        // Player starts with 1500 dollars
+        assertEquals(player.getNetWorth(), 1700);
     }
 }
