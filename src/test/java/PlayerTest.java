@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerTest {
-
+/*
     @Test
     void playerShouldHaveTheCorrectName()
     {
@@ -84,7 +84,7 @@ class PlayerTest {
         Player player = new Player("Cuicui");
         assertTrue(player.getNetWorth() == 1500);
     }
-
+*/
     @Test
     void aPlayerShouldGet200DollarsUpponLandingOnGoSquare()
     {
