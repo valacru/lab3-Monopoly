@@ -1,6 +1,7 @@
 package Monopoly;
 
 import Monopoly.Board.Board;
+import Monopoly.Elements.Cup;
 import Monopoly.Elements.Die;
 import Monopoly.Players.Player;
 
@@ -9,7 +10,7 @@ import java.util.LinkedList;
 public class MonopolyGame {
     private int nbPlayers;
     private Board board;
-    private Die die;
+    private Cup cup;
     private LinkedList<Player> players;
     private static final int roundCount = 20;
 
@@ -18,8 +19,8 @@ public class MonopolyGame {
         players = new LinkedList<Player>();
         nbPlayers = newNbPlayers;
 
-
-        die = new Die();
+        int nbDice = 2;
+        cup = new Cup(nbDice);
         board = new Board();
         String baseName = "Player";
 
@@ -34,9 +35,8 @@ public class MonopolyGame {
         return board;
     }
 
-    public Die getDie()
-    {
-        return die;
+    public Cup getCup() {
+        return cup;
     }
 
     public LinkedList<Player> getPlayers() {
@@ -45,7 +45,7 @@ public class MonopolyGame {
 
     public void playRound(Player player)
     {
-        player.takeTurn(board, die);
+        player.takeTurn(board, cup);
     }
 
     public void playGame()

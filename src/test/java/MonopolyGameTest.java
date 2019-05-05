@@ -22,7 +22,7 @@ class MonopolyGameTest {
         MonopolyGame monopolyGame = new MonopolyGame(nbPlayers);
         assertNotNull(monopolyGame.getPlayers().size());
         assertNotNull(monopolyGame.getBoard());
-        assertNotNull(monopolyGame.getDie());
+        assertNotNull(monopolyGame.getCup());
     }
 
 }
