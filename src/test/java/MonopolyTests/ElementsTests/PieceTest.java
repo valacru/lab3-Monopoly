@@ -1,3 +1,5 @@
+package MonopolyTests.ElementsTests;
+
 import Monopoly.Elements.Piece;
 import org.junit.jupiter.api.Test;
 

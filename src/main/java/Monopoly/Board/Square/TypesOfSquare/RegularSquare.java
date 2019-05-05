@@ -10,6 +10,5 @@ public class RegularSquare extends Square {
 
     @Override
     public void landedOn(Player player) {
-
     }
 }

@@ -1,3 +1,5 @@
+package MonopolyTests.BoardTests;
+
 import Monopoly.Board.Board;
 import org.junit.jupiter.api.Test;
 
