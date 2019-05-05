@@ -1,5 +1,6 @@
 import Monopoly.Board.Board;
 import Monopoly.Board.Square.TypesOfSquare.GoSquare;
+import Monopoly.Board.Square.TypesOfSquare.GoToJailSquare;
 import Monopoly.Board.Square.TypesOfSquare.IncomeTaxSquare;
 import Monopoly.Elements.Die;
 import Monopoly.Players.Player;
@@ -103,6 +104,6 @@ class PlayerTest {
         IncomeTaxSquare incomeTaxSquare = new IncomeTaxSquare("Income Tax Square");
         incomeTaxSquare.landedOn(player);
         // Player starts with 1500 dollars
-        assertEquals(player.getNetWorth(), 1300);
+        assertEquals(player.getNetWorth(), 1350);
     }
 }
