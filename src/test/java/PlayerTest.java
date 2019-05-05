@@ -106,4 +106,13 @@ class PlayerTest {
         // Player starts with 1500 dollars
         assertEquals(player.getNetWorth(), 1350);
     }
+
+    @AfterAll
+    static void aPlayerShouldGoToJailUpponLandingOnGoToJailSquare()
+    {
+        Player player = new Player("Daenerys");
+        GoToJailSquare goToJailSquare = new GoToJailSquare("Go To Jail Square");
+        goToJailSquare.landedOn(player);
+        assertEquals(player.getPiece().getLocation().getSquareName(), "Square 10");
+    }
 }
