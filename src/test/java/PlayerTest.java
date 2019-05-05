@@ -107,8 +107,8 @@ class PlayerTest {
         assertEquals(player.getNetWorth(), 1350);
     }
 
-    @Test
-    void aPlayerShouldGoToJailUpponLandingOnGoToJailSquare()
+    @AfterAll
+    static void aPlayerShouldGoToJailUpponLandingOnGoToJailSquare()
     {
         Player player = new Player("Daenerys");
         GoToJailSquare goToJailSquare = new GoToJailSquare("Go To Jail Square");
