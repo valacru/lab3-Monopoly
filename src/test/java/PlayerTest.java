@@ -1,4 +1,5 @@
 import Monopoly.Board.Board;
+import Monopoly.Board.Square.TypesOfSquare.GoSquare;
 import Monopoly.Elements.Die;
 import Monopoly.Players.Player;
 import org.junit.jupiter.api.Test;
@@ -82,5 +83,15 @@ class PlayerTest {
     {
         Player player = new Player("Cuicui");
         assertTrue(player.getNetWorth() == 1500);
+    }
+
+    @Test
+    void aPlayerShouldGet200DollarsUpponLandingOnGoSquare()
+    {
+        Player player = new Player("Sansa");
+        GoSquare goSquare = new GoSquare("Go");
+        goSquare.landedOn(player);
+        // Player starts with 1500 dollars
+        assertEquals(player.getNetWorth(), 1700);
     }
 }
